@@ -68,7 +68,7 @@ const showLoader = function() {
  * Удаляет таймаут индикатора, ничего не возвращает.
  */
 const hideLoader = function() {
-  const loaderTimeout = setTimeout(function() {
+  loaderTimeout = setTimeout(function() {
     loader.style.display = "none";
     clearTimeout(loaderTimeout);
   }, 700);

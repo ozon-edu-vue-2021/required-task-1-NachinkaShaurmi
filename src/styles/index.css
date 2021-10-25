@@ -11,7 +11,7 @@ body {
 img {
   width: 100%;
   max-width: 100%;
-  display: bloсk;
+  display: block;
 }
 
 a {
@@ -85,15 +85,15 @@ a {
   min-height: 100px;
 }
 
-a:nth-child(n) {
+a:nth-child(n):not(.open) {
   background-color: #efebe9;
 }
 
-a:nth-child(2n) {
+a:nth-child(2n):not(.open) {
   background-color: #d7ccc8;
 }
 
-a:nth-child(3n) {
+a:nth-child(3n):not(.open) {
   background-color: #bcaaa4;
 }
 
@@ -150,6 +150,7 @@ figcaption {
 
 .popup .link {
   display: inline;
+  background-color: transparent;
 }
 
 .popup .close {
